@@ -1,0 +1,32 @@
+{
+  "author": "Jonah Snider <me@jonahsnider.ninja> (jonahsnider.ninja)",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "description": "A general purpose utility bot, with an economy, games, and lots of other features.",
+  "devDependencies": {
+    "docz": "^0.12.15",
+    "eslint": "^5.9.0",
+    "eslint-config-amber": "^2.0.0",
+    "markdownlint-cli": "^0.13.0"
+  },
+  "email": "me@jonahsnider.ninja",
+  "engines": {
+    "node": "10.x.x"
+  },
+  "keywords": [
+    "discord",
+    "discordbot"
+  ],
+  "license": "Apache-2.0",
+  "main": "src/index.js",
+  "name": "reported",
+  "repository": "dice-discord/reported",
+  "scripts": {
+    "docz:build": "docz build",
+    "docz:dev": "docz dev",
+    "lint": "eslint . && markdownlint -i node_modules .",
+    "start": "node src/index.js"
+  },
+  "version": "1.0.0"
+}
