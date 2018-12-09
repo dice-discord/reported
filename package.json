@@ -5,8 +5,7 @@
   },
   "description": "Utility for submitting server count statistics to Discord bot listings",
   "devDependencies": {
-    "docz": "^0.12.15",
-    "eslint": "^5.9.0",
+    "eslint": "^5.10.0",
     "eslint-config-amber": "^2.0.0",
     "markdownlint-cli": "^0.13.0"
   },
@@ -23,8 +22,6 @@
   "name": "reported",
   "repository": "dice-discord/reported",
   "scripts": {
-    "docz:build": "docz build",
-    "docz:dev": "docz dev",
     "lint": "eslint . && markdownlint -i node_modules .",
     "start": "node src/index.js"
   },
