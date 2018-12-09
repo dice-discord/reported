@@ -1,10 +1,17 @@
 {
   "botlistSpace": "BotlistSpace",
+  "botsForDiscord": "BotsForDiscord",
   "botsOnDiscord": "BotsOnDiscord",
+  "discordBoats": "DiscordBoats",
   "discordBoatsClub": "DiscordBoatsClub",
+  "discordBotIndex": "DiscordBotIndex",
   "discordBotList": "DiscordBotList",
+  "discordBotListCom": "DiscordBotListCom",
+  "discordBotListXyz": "DiscordBotListXyz",
   "discordBotWorld": "DiscordBotWorld",
   "discordBots": "DiscordBots",
   "discordBotsGroup": "DiscordBotsGroup",
-  "discordServices": "DiscordServices"
+  "discordListApp": "DiscordListApp",
+  "discordServices": "DiscordServices",
+  "divineDiscordBotList": "DivineDiscordBotList"
 }

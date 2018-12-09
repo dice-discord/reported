@@ -18,22 +18,21 @@ const Website = require('../Website');
 const axios = require('axios');
 
 /**
- * Discordboats.club configuration.
+ * Discordbotlist.com configuration.
  */
-class DiscordBoatsClub extends Website {
+class DiscordBotListCom extends Website {
   submit(settings) {
-    const url = 'https://discordboats.club/api/public/bot/stats';
+    const url = `https://discordbotlist.com/api/bots/${this.id}/stats`;
 
     return axios({
       method: 'post',
       url,
-      headers: { Authorization: this.token },
+      headers: { Authorization: `Bot ${this.token}` },
       data: {
-        // eslint-disable-next-line camelcase
-        server_count: settings.serverCount
+        guilds: settings.serverCount
       }
     });
   }
 }
 
-module.exports = DiscordBoatsClub;
+module.exports = DiscordBotListCom;

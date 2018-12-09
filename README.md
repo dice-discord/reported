@@ -1,8 +1,5 @@
 # Reported
 
-[![Build Status](https://travis-ci.com/dice-discord/reported.svg?branch=master)](https://travis-ci.com/dice-discord/reported)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3fe4127f442845c58b8e503b7f84a471)](https://www.codacy.com/app/dice-discord/reported?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dice-discord/reported&amp;utm_campaign=Badge_Grade)
-
 ## About
 
 Reported is a utility for submitting server count statistics to Discord bot listings.
@@ -12,29 +9,24 @@ Reported is a utility for submitting server count statistics to Discord bot list
 | Name                                                  | Supported |
 | ----------------------------------------------------- | --------- |
 | [botlist.space](https://botlist.space/)               | ✔         |
-| [Bots for Discord](https://botsfordiscord.com/)       | ❌        |
+| [Bots for Discord](https://botsfordiscord.com/)       | ✔         |
 | Bots on Discord                                       | ✔         |
 | Carbonitex                                            | ❌        |
-| Dank Bot List                                         | ❌        |
-| Discord Boats                                         | ❌        |
+| Discord Boats                                         | ✔         |
 | discordboats.club                                     | ✔         |
-| Discord Bot Index                                     | ❌        |
-| Discord Bot Labs                                      | ❌        |
+| Discord Bot Index                                     | ✔         |
 | Discord Bot List (org)                                | ✔         |
-| [Discord Bot List (com)](https://discordbotlist.com/) | ❌        |
-| Discord Bot List (xyz)                                | ❌        |
-| Discord Bot Reviews                                   | ❌        |
-| Discord Bot World                                     | ✔         |
+| [Discord Bot List (com)](https://discordbotlist.com/) | ✔         |
+| [Discord Bot List (xyz)](https://discordbotlist.xyz/) | ✔         |
+| [Discord Bot World](https://discordbot.world/)        | ✔         |
 | [Discord Bots (gg)](https://discord.bots.gg/)         | ✔         |
-| Discord Bots (com)                                    | ❌        |
-| Discord Bots Group                                    | ✔         |
-| Discord List App                                      | ❌        |
-| Discord Music Bots                                    | ❌        |
-| Discord Services                                      | ✔         |
-| Discord's Best Bots                                   | ❌        |
+| [Discord Bots (com)](https://discordbotslist.com/)    | ❌        |
+| [Discord Bots Group](https://discordbots.group/)      | ✔         |
+| [Discord List App ](https://bots.discordlist.app/)    | ✔         |
+| [Discord Services](https://discord.services/)         | ✔         |
+| [Discord's Best Bots](https://discordsbestbots.xyz/)  | ❌        |
 | Discord's Extreme List                                | ❌        |
-| Divine Discord Bot List                               | ❌        |
-| [ls.terminal.ink](https://ls.terminal.ink/)           | ❌        |
+| Divine Discord Bot List                               | ✔         |
 
 ## Installation
 

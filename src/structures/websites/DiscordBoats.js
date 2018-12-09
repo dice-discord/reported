@@ -18,11 +18,11 @@ const Website = require('../Website');
 const axios = require('axios');
 
 /**
- * Discordboats.club configuration.
+ * Discord.boats configuration.
  */
-class DiscordBoatsClub extends Website {
+class DiscordBoats extends Website {
   submit(settings) {
-    const url = 'https://discordboats.club/api/public/bot/stats';
+    const url = `https://discord.boats/api/bot/${this.id}`;
 
     return axios({
       method: 'post',
@@ -36,4 +36,4 @@ class DiscordBoatsClub extends Website {
   }
 }
 
-module.exports = DiscordBoatsClub;
+module.exports = DiscordBoats;
