@@ -32,17 +32,19 @@ Reported is a utility for submitting server count statistics to Discord bot list
 
 ## Installation
 
-### NPM
-
+{% tabs %}
+{% tab title="NPM" %}
 ```bash
 npm install reported
 ```
+{% endtab %}
 
-### Yarn
-
+{% tab title="Yarn" %}
 ```bash
 yarn add reported
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Usage
 
