@@ -12,9 +12,6 @@
     "eslint-config-amber": "^2.0.0"
   },
   "email": "me@jonahsnider.ninja",
-  "engines": {
-    "node": "10.x.x"
-  },
   "homepage": "https://dice.gitbook.io/reported/",
   "keywords": [
     "discord",
@@ -28,5 +25,5 @@
     "lint": "eslint .",
     "start": "node src/index.js"
   },
-  "version": "1.2.0"
+  "version": "1.2.1"
 }
