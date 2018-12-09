@@ -8,6 +8,8 @@ Reported is a utility for submitting server count statistics to Discord bot list
 
 ### Listing support
 
+Slug is what you should use when 
+
 | Name | Slug | Class Name | Supported |
 | :--- | :--- | :--- | :--- |
 | [botlist.space](https://botlist.space/) | `botlistSpace` | `BotlistSpace` | ✔ |
@@ -48,16 +50,12 @@ yarn add reported
 
 ## Usage
 
-Using reported is easy with the batch function. Pass in the tokens for bot lists as well as statistics and reported will handle it for you.
+Using reported is easy with the batch function. Pass in the tokens for bot lists as well as statistics and reported will handle it for you. You can also use the individual website configurations, if you want to send a request to a single website.
 
-If you'd like you can use individual mode
+Both examples will report the server count \(`100`\) to the website. If the website supports it it will send the shards \(`[50, 50]`\) as well.
 
-### Batch
-
-This will report the server count \(`100`\) to the website\(s\) you provided API tokens for and if applicable, the shard count and servers per shard.
-
-{% code-tabs %}
-{% code-tabs-item title="batch.js" %}
+{% tabs %}
+{% tab title="Batch" %}
 ```javascript
 const { Batch } = require("reported");
 
@@ -68,13 +66,9 @@ batchReport.submit({
   shards: [50, 50]
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
 
-### Individual
-
-{% code-tabs %}
-{% code-tabs-item title="individual.js" %}
+{% tab title="Individual" %}
 ```javascript
 const { DiscordBots } = require("reported");
 
@@ -88,6 +82,6 @@ discordBots.submit({
   shards: [50, 50]
 });
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
