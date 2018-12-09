@@ -1,3 +1,9 @@
+---
+description: >-
+  Reported is a utility for submitting server count statistics to Discord bot
+  listings.
+---
+
 # Reported
 
 [![Build Status](https://travis-ci.com/dice-discord/reported.svg?branch=master)](https://travis-ci.com/dice-discord/reported) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3fe4127f442845c58b8e503b7f84a471)](https://www.codacy.com/app/dice-discord/reported?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dice-discord/reported&amp;utm_campaign=Badge_Grade) [![NPM](https://nodei.co/npm/reported.svg?compact=true)](https://www.npmjs.com/package/reported)
@@ -8,7 +14,7 @@ Reported is a utility for submitting server count statistics to Discord bot list
 
 ### Listing support
 
-Slug is what you should use when 
+Slug is what you should use as a key for tokens when using batch mode. If you are using individual mode you'll want to use class names.
 
 | Name | Slug | Class Name | Supported |
 | :--- | :--- | :--- | :--- |
