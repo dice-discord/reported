@@ -13,10 +13,8 @@ Reported is a utility for submitting server count statistics to Discord bot list
 
 | Name                                                  | Supported |
 | ----------------------------------------------------- | --------- |
-| AutomaCord                                            | ❌        |
-| Boat List                                             | ❌        |
-| botlist.space                                         | ✔         |
-| Bots for Discord                                      | ❌        |
+| [botlist.space](https://botlist.space/)               | ✔         |
+| [Bots for Discord](https://botsfordiscord.com/)       | ❌        |
 | Bots on Discord                                       | ✔         |
 | Carbonitex                                            | ❌        |
 | Dank Bot List                                         | ❌        |
@@ -66,9 +64,9 @@ If you'd like you can use individual mode
 This will report the server count (`100`) to the website(s) you provided API tokens for and if applicable, the shard count and servers per shard.
 
 ```js
-const { Batch } = require('reported');
+const { Batch } = require("reported");
 
-const batchReport = new Batch({ botlistSpace: 'abcdef123456' }, '123456789');
+const batchReport = new Batch({ botlistSpace: "abcdef123456" }, "123456789");
 
 batchReport.submit({
   serverCount: 100,
@@ -79,11 +77,11 @@ batchReport.submit({
 ### Individual
 
 ```js
-const { DiscordBots } = require('reported');
+const { DiscordBots } = require("reported");
 
 const discordBots = new DiscordBots({
-  id: '1234566789',
-  token: 'abcdef123456'
+  id: "1234566789",
+  token: "abcdef123456"
 });
 
 discordBots.submit({
