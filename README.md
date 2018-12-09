@@ -8,27 +8,27 @@ Reported is a utility for submitting server count statistics to Discord bot list
 
 ### Listing support
 
-| Name | Keyword | Class Name | Supported |
+| Name | Slug | Class Name | Supported |
 | :--- | :--- | :--- | :--- |
 | [botlist.space](https://botlist.space/) | `botlistSpace` | `BotlistSpace` | ✔ |
 | [Bots for Discord](https://botsfordiscord.com/) | `botsForDiscord` | `BotsForDiscord` | ✔ |
 | [Bots on Discord](https://bots.ondiscord.xyz/) | `botsOnDiscord` | `BotsOnDiscord` | ✔ |
 | [Carbonitex](https://www.carbonitex.net/discord/bots) |  |  | ❌ |
-| [Discord Boats](https://discord.boats/) | discordBoats | DiscordBoats | ✔ |
-| [discordboats.club](https://discordboats.club/) | discordBoatsClub | DiscordBoatsClub | ✔ |
-| [Discord Bot Index](https://discordbotindex.com/) | discordBotIndex | DiscordBotIndex | ✔ |
-| [Discord Bot List \(org\)](https://discordbots.org/) | discordBotList | DiscordBotList | ✔ |
-| [Discord Bot List \(com\)](https://discordbotlist.com/) | discordBotListCom | DiscordBotListCom | ✔ |
-| [Discord Bot List \(xyz\)](https://discordbotlist.xyz/) | discordBotListXyz | DiscordBotListXyz | ✔ |
-| [Discord Bot World](https://discordbot.world/) | discordBotWorld | DiscordBotWorld | ✔ |
-| [Discord Bots \(gg\)](https://discord.bots.gg/) | discordBots | DiscordBots | ✔ |
+| [Discord Boats](https://discord.boats/) | `discordBoats` | `DiscordBoats` | ✔ |
+| [discordboats.club](https://discordboats.club/) | `discordBoatsClub` | `DiscordBoatsClub` | ✔ |
+| [Discord Bot Index](https://discordbotindex.com/) | `discordBotIndex` | `DiscordBotIndex` | ✔ |
+| [Discord Bot List \(org\)](https://discordbots.org/) | `discordBotList` | `DiscordBotList` | ✔ |
+| [Discord Bot List \(com\)](https://discordbotlist.com/) | `discordBotListCom` | `DiscordBotListCom` | ✔ |
+| [Discord Bot List \(xyz\)](https://discordbotlist.xyz/) | `discordBotListXyz` | `DiscordBotListXyz` | ✔ |
+| [Discord Bot World](https://discordbot.world/) | `discordBotWorld` | `DiscordBotWorld` | ✔ |
+| [Discord Bots \(gg\)](https://discord.bots.gg/) | `discordBots` | `DiscordBots` | ✔ |
 | [Discord Bots \(com\)](https://discordbotslist.com/) |  |  | ❌ |
-| [Discord Bots Group](https://discordbots.group/) | discordBotsGroup | DiscordBotsGroup | ✔ |
-| [Discord List App](https://bots.discordlist.app/) | discordListApp | DiscordListApp | ✔ |
-| [Discord Services](https://discord.services/) | discordServices | DiscordServices | ✔ |
+| [Discord Bots Group](https://discordbots.group/) | `discordBotsGroup` | `DiscordBotsGroup` | ✔ |
+| [Discord List App](https://bots.discordlist.app/) | `discordListApp` | `DiscordListApp` | ✔ |
+| [Discord Services](https://discord.services/) | `discordServices` | `DiscordServices` | ✔ |
 | [Discord's Best Bots](https://discordsbestbots.xyz/) |  |  | ❌ |
-| [Discord's Extreme List](https://discordsextremelist.tk/) | discordsExtremeList | DiscordsExtremeList | ✔ |
-| [Divine Discord Bot List](https://divinediscordbots.com/) | divineDiscordBotList | DivineDiscordBotList | ✔ |
+| [Discord's Extreme List](https://discordsextremelist.tk/) | `discordsExtremeList` | `DiscordsExtremeList` | ✔ |
+| [Divine Discord Bot List](https://divinediscordbots.com/) | `divineDiscordBotList` | `DivineDiscordBotList` | ✔ |
 
 ## Installation
 
