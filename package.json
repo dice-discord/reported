@@ -1,5 +1,8 @@
 {
   "author": "Jonah Snider <me@jonahsnider.ninja> (jonahsnider.ninja)",
+  "bugs": {
+    "url": "https://github.com/dice-discord/reported/issues"
+  },
   "dependencies": {
     "axios": "^0.18.0"
   },
@@ -12,6 +15,7 @@
   "engines": {
     "node": "10.x.x"
   },
+  "homepage": "https://dice.gitbook.io/reported/",
   "keywords": [
     "discord",
     "discordbot"
