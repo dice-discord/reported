@@ -3,7 +3,7 @@
   "dependencies": {
     "axios": "^0.18.0"
   },
-  "description": "A general purpose utility bot, with an economy, games, and lots of other features.",
+  "description": "Utility for submitting server count statistics to Discord bot listings",
   "devDependencies": {
     "docz": "^0.12.15",
     "eslint": "^5.9.0",
