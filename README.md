@@ -12,7 +12,7 @@ description: >-
 
 Reported is a utility for submitting server count statistics to Discord bot listings.
 
-### Listing support
+### Lists
 
 Slug is what you should use as a key for tokens when using batch mode. If you are using individual mode you'll want to use class names.
 
