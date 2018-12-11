@@ -18,10 +18,17 @@ module.exports = {
   Batch: require('./structures/Batch'),
   BotlistSpace: require('./structures/websites/BotlistSpace'),
   BotsOnDiscord: require('./structures/websites/BotsOnDiscord'),
+  DiscordBoats: require('./structures/websites/DiscordBoats'),
   DiscordBoatsClub: require('./structures/websites/DiscordBoatsClub'),
+  DiscordBotIndex: require('./structures/websites/DiscordBotIndex'),
   DiscordBotList: require('./structures/websites/DiscordBotList'),
-  DiscordBotWorld: require('./structures/websites/DiscordBotWorld'),
+  DiscordBotListCom: require('./structures/websites/DiscordBotListCom'),
+  DiscordBotListXyz: require('./structures/websites/DiscordBotListXyz'),
   DiscordBots: require('./structures/websites/DiscordBots'),
   DiscordBotsGroup: require('./structures/websites/DiscordBotsGroup'),
-  DiscordServices: require('./structures/websites/DiscordServices')
+  DiscordBotWorld: require('./structures/websites/DiscordBotWorld'),
+  DiscordListApp: require('./structures/websites/DiscordListApp'),
+  DiscordServices: require('./structures/websites/DiscordServices'),
+  DiscordExtremeList: require('./structures/websites/DiscordExtremeList'),
+  DivineDiscordBotList: require('./structures/websites/DivineDiscordBotList')
 };
