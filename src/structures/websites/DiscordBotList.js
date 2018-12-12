@@ -18,7 +18,7 @@ const Website = require('../Website');
 const axios = require('axios');
 
 /**
- * Discordbotlist.com configuration.
+ * Discordbots.org configuration.
  */
 class DiscordBotList extends Website {
   submit(settings) {
