@@ -29,6 +29,6 @@ module.exports = {
   DiscordBotWorld: require('./structures/websites/DiscordBotWorld'),
   DiscordListApp: require('./structures/websites/DiscordListApp'),
   DiscordServices: require('./structures/websites/DiscordServices'),
-  DiscordExtremeList: require('./structures/websites/DiscordExtremeList'),
+  DiscordsExtremeList: require('./structures/websites/DiscordsExtremeList'),
   DivineDiscordBotList: require('./structures/websites/DivineDiscordBotList')
 };
