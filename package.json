@@ -25,5 +25,5 @@
     "lint": "eslint .",
     "start": "node src/index.js"
   },
-  "version": "1.1.2"
+  "version": "1.1.3"
 }
