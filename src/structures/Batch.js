@@ -31,6 +31,7 @@ class Batch {
     this.tokens = tokens;
     this.id = id;
   }
+
   /**
    * @param {Statistics} statistics - Data to send to bot listings
    */
