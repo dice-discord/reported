@@ -8,8 +8,10 @@
   },
   "description": "Utility for submitting server count statistics to Discord bot listings",
   "devDependencies": {
+    "codecov": "^3.1.0",
     "eslint": "^5.10.0",
-    "eslint-config-amber": "^2.0.0"
+    "eslint-config-amber": "^2.0.0",
+    "tap": "^12.1.1"
   },
   "email": "me@jonahsnider.ninja",
   "homepage": "https://dice.gitbook.io/reported/",
@@ -23,7 +25,9 @@
   "repository": "dice-discord/reported",
   "scripts": {
     "lint": "eslint .",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "tap -J --coverage -R progress --coverage-report=text-summary test/**/*.js",
+    "test:coverage": "tap --coverage-report=text-lcov && codecov"
   },
   "version": "1.1.4"
 }

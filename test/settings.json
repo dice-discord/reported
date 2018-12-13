@@ -1,0 +1,8 @@
+{
+  "serverCount": 100,
+  "shards": [
+    50,
+    50
+  ],
+  "token": "token"
+}
