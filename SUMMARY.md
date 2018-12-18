@@ -1,6 +1,7 @@
 # Table of contents
 
-* [Reported](README.md)
+* [Introduction](README.md)
+* [Reported](reported.md)
 
 ## REST API
 
