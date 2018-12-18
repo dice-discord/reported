@@ -6,6 +6,7 @@
 ## Usage
 
 * [Installation](usage/installation.md)
+* [Usage](usage/usage.md)
 
 ## REST API
 
