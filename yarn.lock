@@ -1590,10 +1590,10 @@ js-tokens@^3.0.2:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
-js-yaml@^3.11.0, js-yaml@^3.12.0, js-yaml@^3.2.7, js-yaml@^3.3.1:
-  version "3.12.0"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.0.tgz#eaed656ec8344f10f527c6bfa1b6e2244de167d1"
-  integrity sha512-PIt2cnwmPfL4hKNwqeiuz4bKfnzHTBv6HyVgjahA6mPLwPDzjDWrplJBMjHUFxku/N3FlmrbyPclad+I+4mJ3A==
+js-yaml@^3.11.0, js-yaml@^3.12.0, js-yaml@^3.12.1, js-yaml@^3.2.7, js-yaml@^3.3.1:
+  version "3.12.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.12.1.tgz#295c8632a18a23e054cf5c9d3cecafe678167600"
+  integrity sha512-um46hB9wNOKlwkHgiuyEVAybXBjwFUV0Z/RaHJblRd9DXltue9FTYvzCr9ErQrK9Adz5MU4gHWVaNUfdmrC8qA==
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
@@ -2412,12 +2412,12 @@ ret@~0.1.10:
   resolved "https://registry.yarnpkg.com/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
   integrity sha512-TTlYpa+OL+vMMNG24xSlQGEJ3B/RzEfUlLct7b5G/ytav+wPrplCpVMFuwzXbkecJrb6IYo1iFb0S9v37754mg==
 
-rimraf@^2.6.1, rimraf@^2.6.2, rimraf@~2.6.2:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.2.tgz#2ed8150d24a16ea8651e6d6ef0f47c4158ce7a36"
-  integrity sha512-lreewLK/BlghmxtfH36YYVg1i8IAce4TI7oao75I1g245+6BctqTVQiBP3YUJ9C6DQOXJmkYR9X9fCLtCOJc5w==
+rimraf@^2.6.1, rimraf@^2.6.2, rimraf@^2.6.3, rimraf@~2.6.2:
+  version "2.6.3"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.3.tgz#b2d104fe0d8fb27cf9e0a1cda8262dd3833c6cab"
+  integrity sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==
   dependencies:
-    glob "^7.0.5"
+    glob "^7.1.3"
 
 run-async@^2.2.0:
   version "2.3.0"
@@ -2552,10 +2552,10 @@ source-map-resolve@^0.5.0:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
-source-map-support@^0.5.9:
-  version "0.5.9"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.9.tgz#41bc953b2534267ea2d605bccfa7bfa3111ced5f"
-  integrity sha512-gR6Rw4MvUlYy83vP0vxoVNzM6t8MUXqNuRsuBmBHQDu1Fh6X015FrLdgoDKcNdkwGubozq0P4N0Q37UyFVr1EA==
+source-map-support@^0.5.10:
+  version "0.5.10"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.10.tgz#2214080bc9d51832511ee2bab96e3c2f9353120c"
+  integrity sha512-YfQ3tQFTK/yzlGJuX8pTwa4tifQj4QS2Mj7UegOu8jAz59MqIiMGPXxQhVQiIMNzayuUSF/jEuVnfFF5JqybmQ==
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
@@ -2640,7 +2640,7 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
-stack-utils@^1.0.0:
+stack-utils@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/stack-utils/-/stack-utils-1.0.2.tgz#33eba3897788558bebfc2db059dc158ec36cebb8"
   integrity sha512-MTX+MeG5U994cazkjd/9KNAapsHnibjMLnfXodlkXw76JEea0UiNzrqidzo1emMwk7w5Qhc9jd4Bn9TBb1MFwA==
@@ -2780,9 +2780,9 @@ tap-parser@^7.0.0:
     minipass "^2.2.0"
 
 tap@^12.1.1:
-  version "12.1.2"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-12.1.2.tgz#b6e6af4ded7be65813ceeb4d451c405b34fdfa53"
-  integrity sha512-bSxKjA6Pchgt7Ho1V/hbRvU9aoJgCTD9Gwxl1D4gw5NiV093Kbi+eXsOXpY8dNaXkLeE+YiMU142cOj2DojHUA==
+  version "12.2.0"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-12.2.0.tgz#1741c84a2745e8e434c9e54cb082e5b9ea2c3f92"
+  integrity sha512-VQHRGJFZirucm4fOcqMsPJ6hTfg6qK0q69Ktpj4YyruxMJ0/RvB84DUv+SS2nCX1+sDC8JOUUNvYXxPVBxEwlg==
   dependencies:
     bind-obj-methods "^2.0.0"
     bluebird "^3.5.3"
@@ -2797,7 +2797,7 @@ tap@^12.1.1:
     function-loop "^1.0.1"
     glob "^7.1.3"
     isexe "^2.0.0"
-    js-yaml "^3.12.0"
+    js-yaml "^3.12.1"
     minipass "^2.3.5"
     mkdirp "^0.5.1"
     nyc "^11.9.0"
@@ -2805,10 +2805,10 @@ tap@^12.1.1:
     os-homedir "^1.0.2"
     own-or "^1.0.0"
     own-or-env "^1.0.1"
-    rimraf "^2.6.2"
+    rimraf "^2.6.3"
     signal-exit "^3.0.0"
-    source-map-support "^0.5.9"
-    stack-utils "^1.0.0"
+    source-map-support "^0.5.10"
+    stack-utils "^1.0.2"
     tap-mocha-reporter "^3.0.7"
     tap-parser "^7.0.0"
     tmatch "^4.0.0"
