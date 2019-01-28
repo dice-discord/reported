@@ -17,6 +17,7 @@ limitations under the License.
 module.exports = {
   Batch: require('./structures/Batch'),
   BotlistSpace: require('./structures/websites/BotlistSpace'),
+  BotsForDiscord: require('./structures/websites/BotsForDiscord'),
   BotsOnDiscord: require('./structures/websites/BotsOnDiscord'),
   DiscordBoats: require('./structures/websites/DiscordBoats'),
   DiscordBoatsClub: require('./structures/websites/DiscordBoatsClub'),
