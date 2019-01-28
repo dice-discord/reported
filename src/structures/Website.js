@@ -14,23 +14,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-/**
- * @typedef WebsiteSettings
- * @type {object}
- * @property {string} token - Token for using the website API.
- * @property {string} id - The bot user ID to update statistics for.
- * @property {number} serverCount - Total server count.
- * @property {number[]} [shards] - Server/guild count per shard.
- */
+const EventEmitter = require('events');
 
 /**
  * Website parent class for bot listing websites.
  */
-class Website {
+class Website extends EventEmitter {
   /**
    * @param {WebsiteSettings} settings - Settings for the website.
    */
   constructor(settings) {
+    super();
+
     this.token = settings.token;
     this.id = settings.id;
 

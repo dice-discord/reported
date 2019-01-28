@@ -14,13 +14,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-/**
- * @typedef Statistics
- * @type {object}
- * @property {number} serverCount - Total server count.
- * @property {number[]} [shards] - Server/guild count per shard.
- */
-
 const websites = require('../websites.json');
 
 /**
@@ -40,6 +33,14 @@ class Batch {
 
     Object.entries(this.tokens).forEach(
       ([botList, token]) => {
+        /**
+         * Event emitted each time the batch submit is about to send a request to a bot list.
+         * @type
+         * @event Batch#status
+         * @param {string} botList - The slug of the current bot list
+         * @param {string} token - The token for the current bot list
+         */
+        this.emit('status', botList, token);
         const WebsiteClass = require(`./websites/${websites[botList]}`);
 
         const config = {

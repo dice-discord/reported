@@ -14,6 +14,21 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+/**
+ * @typedef WebsiteSettings
+ * @type {object}
+ * @property {string} token - Token for using the website API.
+ * @property {string} id - The bot user ID to update statistics for.
+ * @property {number} serverCount - Total server count.
+ * @property {number[]} [shards] - Server/guild count per shard.
+ */
+/**
+ * @typedef Statistics
+ * @type {object}
+ * @property {number} serverCount - Total server count.
+ * @property {number[]} [shards] - Server/guild count per shard.
+ */
+
 module.exports = {
   Batch: require('./structures/Batch'),
   BotlistSpace: require('./structures/websites/BotlistSpace'),
