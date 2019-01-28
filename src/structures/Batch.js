@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-const websites = require('../websites.json');
+const websites = require("../websites.json");
 
 /**
  * Batch class for submitting statistics to numerous bot listings at once.
@@ -31,35 +31,33 @@ class Batch {
   submit(statistics) {
     const promises = [];
 
-    Object.entries(this.tokens).forEach(
-      ([botList, token]) => {
-        /**
-         * Event emitted each time the batch submit is about to send a request to a bot list.
-         * @type
-         * @event Batch#status
-         * @param {string} botList - The slug of the current bot list
-         * @param {string} token - The token for the current bot list
-         */
-        this.emit('status', botList, token);
-        const WebsiteClass = require(`./websites/${websites[botList]}`);
+    Object.entries(this.tokens).forEach(([botList, token]) => {
+      /**
+       * Event emitted each time the batch submit is about to send a request to a bot list.
+       * @type
+       * @event Batch#status
+       * @param {string} botList - The slug of the current bot list
+       * @param {string} token - The token for the current bot list
+       */
+      this.emit("status", botList, token);
+      const WebsiteClass = require(`./websites/${websites[botList]}`);
 
-        const config = {
-          token,
-          id: this.id
-        };
+      const config = {
+        token,
+        id: this.id
+      };
 
-        const website = new WebsiteClass(config);
-        const data = {
-          serverCount: statistics.serverCount
-        };
+      const website = new WebsiteClass(config);
+      const data = {
+        serverCount: statistics.serverCount
+      };
 
-        if (statistics.shards) {
-          data.shards = statistics.shards;
-        }
-
-        promises.push(website.submit(data));
+      if (statistics.shards) {
+        data.shards = statistics.shards;
       }
-    );
+
+      promises.push(website.submit(data));
+    });
 
     return Promise.all(promises);
   }

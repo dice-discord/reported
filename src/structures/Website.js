@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-const EventEmitter = require('events');
+const EventEmitter = require("events");
 
 /**
  * Website parent class for bot listing websites.
@@ -29,8 +29,8 @@ class Website extends EventEmitter {
     this.token = settings.token;
     this.id = settings.id;
 
-    if (this.constructor.name === 'Website') {
-      throw new Error('The base Website cannot be instantiated.');
+    if (this.constructor.name === "Website") {
+      throw new Error("The base Website cannot be instantiated.");
     }
   }
 }

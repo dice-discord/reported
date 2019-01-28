@@ -14,18 +14,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-const Website = require('../Website');
-const axios = require('axios');
+const Website = require("../Website");
+const axios = require("axios");
 
 /**
  * Discordboats.club configuration.
  */
 class DiscordBoatsClub extends Website {
   submit(settings) {
-    const url = 'https://discordboats.club/api/public/bot/stats';
+    const url = "https://discordboats.club/api/public/bot/stats";
 
     return axios({
-      method: 'post',
+      method: "post",
       url,
       headers: { Authorization: this.token },
       data: {

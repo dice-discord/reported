@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-const Website = require('../Website');
-const axios = require('axios');
+const Website = require("../Website");
+const axios = require("axios");
 
 /**
  * Discord.services configuration.
@@ -25,7 +25,7 @@ class DiscordServices extends Website {
     const url = `https://discord.services/api/bots/${this.id}`;
 
     return axios({
-      method: 'post',
+      method: "post",
       url,
       headers: { Authorization: this.token },
       data: {

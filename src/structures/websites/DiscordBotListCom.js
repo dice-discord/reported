@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-const Website = require('../Website');
-const axios = require('axios');
+const Website = require("../Website");
+const axios = require("axios");
 
 /**
  * Discordbotlist.com configuration.
@@ -25,7 +25,7 @@ class DiscordBotListCom extends Website {
     const url = `https://discordbotlist.com/api/bots/${this.id}/stats`;
 
     return axios({
-      method: 'post',
+      method: "post",
       url,
       headers: { Authorization: `Bot ${this.token}` },
       data: {
