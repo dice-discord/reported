@@ -2016,9 +2016,9 @@ tap-parser@^7.0.0:
     minipass "^2.2.0"
 
 tap@^12.1.1:
-  version "12.5.0"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-12.5.0.tgz#6e4474863969d4fa5763e98e5f4212c26a18c1d5"
-  integrity sha512-/QjrHGHIpxYBlojgl0mjj5lPA3+JSTWpHVvxtS8c0Gz3tv8mQ07nTV58WyzlqnLqSp03a9A5nP92hXCOTuiflg==
+  version "12.5.1"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-12.5.1.tgz#e0507f8dfa9ad6380e58febebca3c275532bdca6"
+  integrity sha512-FiZtRwt169oq0pmaZwC4Bw/leqdzmG7paqKA0PYk7+yGq2m3q35U9yh9Hh8x/Z+iue8V2/cFwS8x9mSZnM51cQ==
   dependencies:
     bind-obj-methods "^2.0.0"
     browser-process-hrtime "^1.0.0"
