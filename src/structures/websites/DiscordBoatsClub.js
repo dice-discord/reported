@@ -21,12 +21,16 @@ const axios = require("axios");
  * Discordboats.club configuration.
  */
 class DiscordBoatsClub extends Website {
-  submit(settings) {
-    const url = "https://discordboats.club/api/public/bot/stats";
+  constructor(settings) {
+    super(settings);
 
+    this.url = "https://discordboats.club/api/public/bot/stats";
+  }
+
+  submit(settings) {
     return axios({
       method: "post",
-      url,
+      url: this.url,
       headers: { Authorization: this.token },
       data: {
         // eslint-disable-next-line camelcase

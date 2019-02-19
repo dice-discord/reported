@@ -21,8 +21,13 @@ const axios = require("axios");
  * Discord.bots.gg configuration.
  */
 class DiscordBots extends Website {
+  constructor(settings) {
+    super(settings);
+
+    this.url = `https://discord.bots.gg/api/v1/bots/${this.id}/stats`;
+  }
+
   submit(settings) {
-    const url = `https://discord.bots.gg/api/v1/bots/${this.id}/stats`;
     const data = {
       guildCount: settings.serverCount
     };
@@ -33,7 +38,7 @@ class DiscordBots extends Website {
 
     return axios({
       method: "post",
-      url,
+      url: this.url,
       headers: { Authorization: this.token },
       data
     });

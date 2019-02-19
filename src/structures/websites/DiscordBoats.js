@@ -21,12 +21,16 @@ const axios = require("axios");
  * Discord.boats configuration.
  */
 class DiscordBoats extends Website {
-  submit(settings) {
-    const url = `https://discord.boats/api/bot/${this.id}`;
+  constructor(settings) {
+    super(settings);
 
+    this.url = `https://discord.boats/api/bot/${this.id}`;
+  }
+
+  submit(settings) {
     return axios({
       method: "post",
-      url,
+      url: this.url,
       headers: { Authorization: this.token },
       data: {
         // eslint-disable-next-line camelcase

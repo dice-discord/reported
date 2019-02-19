@@ -21,12 +21,16 @@ const axios = require("axios");
  * Discordbots.group configuration.
  */
 class DiscordBotsGroup extends Website {
-  submit(settings) {
-    const url = `https://discordbots.group/api/bot/${this.id}`;
+  constructor(settings) {
+    super(settings);
 
+    this.url = `https://discordbots.group/api/bot/${this.id}`;
+  }
+
+  submit(settings) {
     return axios({
       method: "post",
-      url,
+      url: this.url,
       headers: { Authorization: this.token },
       data: {
         // eslint-disable-next-line camelcase

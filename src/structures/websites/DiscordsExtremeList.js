@@ -21,12 +21,16 @@ const axios = require("axios");
  * Discordsextremelist.tk configuration.
  */
 class DiscordsExtremeList extends Website {
-  submit(settings) {
-    const url = `https://discordsextremelist.tk/api/bot/${this.id}`;
+  constructor(settings) {
+    super(settings);
 
+    this.url = `https://discordsextremelist.tk/api/bot/${this.id}`;
+  }
+
+  submit(settings) {
     return axios({
       method: "post",
-      url,
+      url: this.url,
       headers: { Authorization: this.token },
       data: {
         count: settings.serverCount

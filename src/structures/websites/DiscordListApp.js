@@ -21,12 +21,16 @@ const axios = require("axios");
  * Bots.discordlist.app configuration.
  */
 class DiscordListApp extends Website {
-  submit(settings) {
-    const url = `https://bots.discordlist.app/api/bot/${this.id}/stats`;
+  constructor(settings) {
+    super(settings);
 
+    this.url = `https://bots.discordlist.app/api/bot/${this.id}/stats`;
+  }
+
+  submit(settings) {
     return axios({
       method: "post",
-      url,
+      url: this.url,
       headers: { Authorization: this.token },
       data: {
         // eslint-disable-next-line camelcase

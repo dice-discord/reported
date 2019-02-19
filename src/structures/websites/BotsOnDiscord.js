@@ -21,12 +21,16 @@ const axios = require("axios");
  * Bots.ondiscord.xyz configuration.
  */
 class BotsOnDiscord extends Website {
-  submit(settings) {
-    const url = `https://bots.ondiscord.xyz/bot-api/bots/${this.id}/guilds`;
+  constructor(settings) {
+    super(settings);
 
+    this.url = `https://bots.ondiscord.xyz/bot-api/bots/${this.id}/guilds`;
+  }
+
+  submit(settings) {
     return axios({
       method: "post",
-      url,
+      url: this.url,
       headers: { Authorization: this.token },
       data: {
         guildCount: settings.serverCount

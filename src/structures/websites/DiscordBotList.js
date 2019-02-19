@@ -21,8 +21,13 @@ const axios = require("axios");
  * Discordbots.org configuration.
  */
 class DiscordBotList extends Website {
+  constructor(settings) {
+    super(settings);
+
+    this.url = `https://discordbots.org/api/bots/${this.id}/stats`;
+  }
+
   submit(settings) {
-    const url = `https://discordbots.org/api/bots/${this.id}/stats`;
     const data = {};
 
     if (settings.shards) {
@@ -34,7 +39,7 @@ class DiscordBotList extends Website {
 
     return axios({
       method: "post",
-      url,
+      url: this.url,
       headers: { Authorization: this.token },
       data
     });

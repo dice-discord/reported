@@ -21,12 +21,16 @@ const axios = require("axios");
  * Discordbotlist.com configuration.
  */
 class DiscordBotListCom extends Website {
-  submit(settings) {
-    const url = `https://discordbotlist.com/api/bots/${this.id}/stats`;
+  constructor(settings) {
+    super(settings);
 
+    this.url = `https://discordbotlist.com/api/bots/${this.id}/stats`;
+  }
+
+  submit(settings) {
     return axios({
       method: "post",
-      url,
+      url: this.url,
       headers: { Authorization: `Bot ${this.token}` },
       data: {
         guilds: settings.serverCount
