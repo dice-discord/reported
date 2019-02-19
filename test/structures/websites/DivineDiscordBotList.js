@@ -2,7 +2,7 @@ const tap = require("tap");
 const sinon = require("sinon");
 const moxios = require("moxios");
 const { serverCount, token, id } = require("../../settings.json");
-const DivineDiscordBotList = require("../../../src/structures/websites/DiscordsExtremeList");
+const DivineDiscordBotList = require("../../../src/structures/websites/DivineDiscordBotList");
 
 moxios.install();
 
