@@ -16,10 +16,12 @@ limitations under the License.
 
 const websites = require("../websites.json");
 
-/**
- * Batch class for submitting statistics to numerous bot listings at once.
- */
 class Batch {
+  /**
+   * Batch class for submitting statistics to numerous bot listings at once.
+   * @param {Object} tokens Object of tokens, keyed by listing slug
+   * @param {Number} id Bot ID
+   */
   constructor(tokens, id) {
     this.tokens = tokens;
     this.id = id;
