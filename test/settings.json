@@ -5,5 +5,8 @@
     50
   ],
   "token": "token",
-  "id": "123456789"
+  "id": "123456789",
+  "tokens": {
+    "discordBotList": "dblToken"
+  }
 }
