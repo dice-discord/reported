@@ -21,8 +21,13 @@ const axios = require("axios");
  * Botlist.space configuration.
  */
 class BotlistSpace extends Website {
+  constructor(settings) {
+    super(settings);
+
+    this.url = `https://api.botlist.space/v1/bots/${this.id}`;
+  }
+
   submit(settings) {
-    const url = `https://botlist.space/api/bots/${this.id}`;
     const data = {};
 
     if (settings.shards) {
@@ -34,7 +39,7 @@ class BotlistSpace extends Website {
 
     return axios({
       method: "post",
-      url,
+      url: this.url,
       headers: { Authorization: this.token },
       data
     });

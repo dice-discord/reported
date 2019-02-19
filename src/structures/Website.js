@@ -28,6 +28,7 @@ class Website extends EventEmitter {
 
     this.token = settings.token;
     this.id = settings.id;
+    this.url;
 
     if (this.constructor.name === "Website") {
       throw new Error("The base Website cannot be instantiated.");

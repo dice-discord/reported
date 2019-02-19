@@ -13,7 +13,9 @@
     "eslint": "^5.10.0",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-prettier": "^3.0.1",
+    "moxios": "^0.4.0",
     "prettier": "^1.16.1",
+    "sinon": "^7.2.4",
     "tap": "^12.1.1"
   },
   "email": "me@jonahsnider.ninja",
@@ -29,8 +31,8 @@
   "scripts": {
     "lint": "eslint .",
     "start": "node src/index.js",
-    "test": "tap -J --coverage -R progress --coverage-report=text-summary test/**/*.js",
-    "test:coverage": "tap --coverage-report=html && codecov"
+    "test": "tap -J -R spec test/**/*.js",
+    "test:coverage": "tap -J --coverage --coverage-report=html test/*/*.js && codecov"
   },
   "version": "1.2.0"
 }

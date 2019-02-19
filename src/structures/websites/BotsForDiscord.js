@@ -21,12 +21,16 @@ const axios = require("axios");
  * Botsfordiscord.com configuration.
  */
 class BotsForDiscord extends Website {
-  submit(settings) {
-    const url = `https://botsfordiscord.com/api/bot/${this.id}/guilds`;
+  constructor(settings) {
+    super(settings);
 
+    this.url = `https://botsfordiscord.com/api/bot/${this.id}/guilds`;
+  }
+
+  submit(settings) {
     return axios({
       method: "post",
-      url,
+      url: this.url,
       headers: { Authorization: this.token },
       data: {
         // eslint-disable-next-line camelcase
