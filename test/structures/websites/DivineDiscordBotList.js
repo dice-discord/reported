@@ -33,7 +33,7 @@ moxios.wait(() => {
   tap.same(
     JSON.parse(req.data),
     // eslint-disable-next-line camelcase
-    { count: serverCount },
+    { server_count: serverCount },
     "server count is correct"
   );
 
