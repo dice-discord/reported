@@ -7,5 +7,37 @@ install:
   - pnpm install
 script:
   - pnpm run lint
-  - pnpm test
+  - pnpm run test
   - pnpm run test:coverage
+language: node_js
+node_js:
+  - "lts/*"
+before_install:
+  - curl -L https://unpkg.com/@pnpm/self-installer | node
+install:
+  - pnpm install
+jobs:
+  include:
+    # Name the first "Tests" job ("Unit tests")
+    - stage: "Tests"
+      name: "Unit tests"
+      script: pnpm run test
+    - name: "Submit test coverage"
+      script: pnpm run test:coverage
+    - name: "Lint"
+      script: pnpm run lint
+    # Name the "Release" stage
+    - stage: "Release"
+      name: "Semantic release"
+      script: skip
+      node_js: lts/*
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - pnpx semantic-release
+        on:
+        repo: dice-discord/reported
+        branches:
+          only:
+            - master
