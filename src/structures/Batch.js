@@ -16,13 +16,17 @@ limitations under the License.
 
 const websites = require("../websites.json");
 
-class Batch {
+const EventEmitter = require("events");
+
+class Batch extends EventEmitter {
   /**
    * Batch class for submitting statistics to numerous bot listings at once.
    * @param {Object} tokens Object of tokens, keyed by listing slug
    * @param {Number} id Bot ID
    */
   constructor(tokens, id) {
+    super();
+
     this.tokens = tokens;
     this.id = id;
   }
