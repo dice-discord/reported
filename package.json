@@ -16,7 +16,7 @@
     "moxios": "^0.4.0",
     "prettier": "^1.16.1",
     "sinon": "^7.2.4",
-    "tap": "^13.0.0"
+    "tap": "^14.0.0"
   },
   "email": "me@jonahsnider.ninja",
   "homepage": "https://dice.gitbook.io/reported/",
