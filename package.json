@@ -4,7 +4,7 @@
     "url": "https://github.com/dice-discord/reported/issues"
   },
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.19.0"
   },
   "description": "Utility for submitting server count statistics to Discord bot listings",
   "devDependencies": {
