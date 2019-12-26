@@ -15,7 +15,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "moxios": "^0.4.0",
     "prettier": "^1.16.1",
-    "sinon": "^7.2.4",
+    "sinon": "^8.0.1",
     "tap": "^14.0.0"
   },
   "email": "me@jonahsnider.ninja",
